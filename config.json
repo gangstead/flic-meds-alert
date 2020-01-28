@@ -1,0 +1,17 @@
+{
+	"pluginName": "Ivy Got Meds",
+	"pluginDescription": "Send Email saying Ivy got meds",
+	"pluginReadMore": "Press button, people get email. https://github.com/gangstead/flic-meds-alert",
+	"protocolVersion": 1,
+	"actions":
+	[
+		{
+			"actionName": "Ivy Got Meds",
+			"fileName": "ivygotmeds.sh"
+		},
+		{
+			"actionName": "Test Email",
+			"fileName": "testemail.sh"
+		}
+	]
+}
