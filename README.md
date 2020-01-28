@@ -13,6 +13,7 @@ Does not require adding anything to the mac, other than the Flic app.
 Probably the hardest part.  There are hundreds of ancient stack overflow posts that all almost work. Probably something different for everyone's configuration.
 - Get postfix set up and sendmail running.
 - Here's the [instructions](https://www.ionos.com/help/email/other-email-programs/setting-up-postfix-linux/) I found for my hosting provider
+    - Except instead of `/etc/init.d/postfix reload` I had to do `sudo launchctl stop org.postfix.master && sudo launchctl start org.postfix.master`
 - Test email: If you can't do send from the command line and receive the email then you're not ready to go on to the Flic part yet
     - ````printf "Subject: sendmail test \nThis was sent from the command line" | sendmail -f sender@example.com yourmail@example.com````
 - It helps to tail running on your user's mail log while trying to send.  You may get some error messages there.  But not getting an error message doesn't mean you will actually get your mail!
